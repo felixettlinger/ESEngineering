@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E & S Engineering - Anlagenbau & Simulationen aus Wien</title>
+    <meta name="description" content="Versuchsanlagenbau für Forschung & Industrie, ASPEN/APROS-Simulationen. Maschinenbau-Experten in Wien für Universitäten und Labore.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #1e2a44; overflow-x: hidden; }
+        header { position: fixed; top: 0; width: 100%; background: rgba(25, 118, 210, 0.95); backdrop-filter: blur(10px); z-index: 1000; padding: 1rem 0; }
+        nav { max-width: 1200px; margin: auto; display: flex; justify-content: space-between; align-items: center; padding: 0 2rem; }
+        nav a { color: white; text-decoration: none; margin: 0 1rem; font-weight: 500; transition: color 0.3s; }
+        nav a:hover { color: #ffffff; text-shadow: 0 0 5px rgba(255,255,255,0.8); }
+        section { padding: 5rem 2rem; max-width: 1200px; margin: auto; }
+        .hero { background: linear-gradient(rgba(25, 118, 210, 0.85), rgba(52, 152, 219, 0.7)), url('images/hero-versuchsanlage.jpg'); background-size: cover; background-position: center; height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; color: white; }
+        .hero h1 { font-size: 3rem; margin-bottom: 1rem; text-shadow: 2px 2px 8px rgba(0,0,0,0.7); }
+        .hero p { font-size: 1.5rem; margin-bottom: 2rem; text-shadow: 1px 1px 4px rgba(0,0,0,0.7); max-width: 800px; }
+        .btn { background: linear-gradient(135deg, #3498db, #2980b9); color: white; padding: 1rem 2rem; border: none; border-radius: 8px; font-size: 1.1rem; cursor: pointer; text-decoration: none; display: inline-block; transition: all 0.3s; box-shadow: 0 6px 20px rgba(52, 152, 219, 0.4); font-weight: 600; }
+        .btn:hover { transform: translateY(-3px); box-shadow: 0 10px 30px rgba(52, 152, 219, 0.6); background: linear-gradient(135deg, #2980b9, #3498db); }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+        .card { background: #ffffff; padding: 2.5rem; border-radius: 15px; box-shadow: 0 15px 40px rgba(52, 152, 219, 0.12); transition: all 0.3s; border-top: 4px solid #3498db; }
+        .card:hover { transform: translateY(-10px); box-shadow: 0 25px 60px rgba(52, 152, 219, 0.25); border-top-color: #2980b9; }
+        .team-grid { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+        .erfolge-list { list-style: none; }
+        .erfolge-list li { background: linear-gradient(90deg, #f8fcff, #ebf3fd); padding: 1.5rem; margin: 1.5rem 0; border-radius: 10px; border-left: 5px solid #3498db; box-shadow: 0 8px 25px rgba(52, 152, 219, 0.1); }
+        form { display: grid; gap: 1.5rem; max-width: 600px; margin: auto; }
+        input, textarea { padding: 1.2rem; border: 2px solid #e1e8f0; border-radius: 8px; font-size: 1rem; transition: all 0.3s; background: #fafbff; color: #1e2a44; }
+        input::placeholder, textarea::placeholder { color: #7f8c9d; }
+        input:focus, textarea:focus { outline: none; border-color: #3498db; box-shadow: 0 0 0 4px rgba(52, 152, 219, 0.15); background: white; }
+        footer { background: linear-gradient(135deg, #3498db, #2980b9); color: white; text-align: center; padding: 2.5rem; box-shadow: 0 -5px 20px rgba(52, 152, 219, 0.3); }
+        h2 { color: #2980b9; font-size: 2.5rem; text-align: center; margin-bottom: 1rem; font-weight: 700; }
+        h3 { color: #3498db; margin-bottom: 1rem; }
+        @media (max-width: 768px) { 
+            .hero h1 { font-size: 2.2rem; } 
+            .hero p { font-size: 1.2rem; }
+            nav { flex-direction: column; gap: 1rem; padding: 1rem 2rem; } 
+            section { padding: 3rem 1rem; }
+        }
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div style="font-size: 1.5rem; font-weight: bold;"> E & S Engineering</div>
+            <div>
+                <a href="#home">Home</a>
+                <a href="#team">Team</a>
+                <a href="#erfolge">Erfolge</a>
+                <a href="#dienste">Dienste</a>
+                <a href="#kontakt">Kontakt</a>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Versuchsanlagenbau & State-of-the-Art Simulationen</h1>
+        <p>Von Konzeption bis Inbetriebnahme: Versuchsanlagen und präzise Simulationen (ASPEN, APROS) für Forschung, Universitäten & Industrie – aus Wien.</p>
+        <a href="#kontakt" class="btn">Projekt anfragen</a>
+    </section>
+
+    <section id="team" class="section">
+        <h2>Unser Team</h2>
+        <p style="text-align: center; font-size: 1.2rem; margin-bottom: 3rem; color: #5a6c7d;">Wir haben beide Maschinenbau an der TU Wien studiert (Bachelor, Master, PhD) und haben im Zuge unserer PhD Tätigkeiten mehrere Versuchsanlagen geplant, konstruiert, montiert und mit Prozessleitsysteme automatisiert. Wir kennen uns mit den Gegebenheiten auf Universitäten aus (kleines Budget, trotzdem kann die Anlage alles). Wir wissen bei welchen Firmen es sich auszahlt als Universität zu bestellen und wo es die größten Preisnachlässe gibt. Unsere Anlagen sind so geplant, dass sie für Nachfolgeprojekte leicht erweitert werden können oder bei veränderten Randbedingungen im Projekt ohne viel Aufwand umgebaut werden können. Wir unterstützen bei der Konzeption der Versuchsanlage (Simulationen, Machbarkeitsstudien) und übernehmen gerne die Planung, Beschaffung, Montage und Inbetriebnahme. Versuchsanlage an Universitäten sind wissenschaftlich komplexe Messinstrumente, mit denen komplexe Fragestellungen beantwortet werden sollen. Wir sind uns dessen bewusst und sind zuversichtlich, dass unsere Anlage Ihre wissenschaftliche Fragestellung beantworten können wird. Sie bekommen von uns eine funktionierende Versuchsanlage übergeben in die Sie eingeschult werden und sie im Anschluss so bedienen können, als hätten sie die Anlage selbst entworfen. Wir setzen auf volle Transparenz und bieten nach Inbetriebnahme gerne Kurse für die Automatiserungstechnik zum Bedienen der Anlage an.</p>
+        <div class="grid team-grid">
+            <div class="card">
+                <h3>Dipl.Ing. Martin Schulz BSc.</h3>
+                <p>Experte für Versuchsanlagenbau, 3D-CAD-Design. Leitung von Anlagenprojekten inkl. Schaltschränken und Prozessleitsystemen.</p>
+            </div>
+            <div class="card">
+                <h3>Dipl.-Ing. Felix Ettlinger BSc.</h3>
+                <p>Spezialist für Simulationen (ASPEN PLUS, APROS), Strömungssimulationen und Versuchsanlagen-Programmierung. Erfahrung mit Solarkraftwerken (Pörner, Heliovis). Experte für Automatisierungstechnik und Prozessleitsysteme (Automation Studio, APROL).</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="erfolge" class="section" style="background: linear-gradient(135deg, #f8fcff, #ebf3fd);">
+        <h2>Bisherige Erfolge</h2>
+        <ul class="erfolge-list">
+            <li><strong>Versuchsanlagenbau (mehrere Projekte):</strong> Komplette Entwicklung inkl. CAD, Prototyping, Rohrleitungen, Pumpen, Schaltschränke & Automatisierung – für Forschung und Industrie.</li>
+            <li><strong>Simulationen für Prozessoptimierung:</strong> ASPEN PLUS für Elektrolyseure und Anlagen; APROS für Strömung und Regelung (z.B. Solarkraftwerke).</li>
+            <li><strong>Behördliche Abwicklungen:</strong> ATEX-Zertifizierungen und Einreichungen für Versuchsanlagen.</li>
+            <li><strong>Diplomarbeit & Doktorarbeit:</strong> Versuchsanlagen-Entwicklung mit Fokus auf Elektrochemie und Prozesssimulation.</li>
+            <li><strong>Weitere Projekte:</strong> Unterstützung von Universitäten und Forschungseinrichtungen bei Anlagenbau, Beschaffung & Automatisierung.</li>
+        </ul>
+    </section>
+
+    <section id="dienste" class="section">
+        <h2>Unsere Kern-Dienste</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Versuchsanlagenbau</h3>
+                <p>Konzeption, Bau und Inbetriebnahme von maßgeschneiderten Versuchsanlagen für Labore und Forschung – inkl. ATEX & Automatisierung.</p>
+            </div>
+            <div class="card">
+                <h3>Verfahrenstechnische Simulationen</h3>
+                <p>ASPEN PLUS für Prozess- und Energieoptimierung von Anlagen und Versuchsständen.</p>
+            </div>
+            <div class="card">
+                <h3>Strömungs- & Regelungssimulationen</h3>
+                <p>APROS für Kraftwerke, Versuchsanlagen und dynamische Prozesse.</p>
+            </div>
+            <div class="card">
+                <h3>Kundenspezifische Modelle</h3>
+                <p>MATLAB/Python für Thermodynamik, Strömungsmechanik und Elektrochemie-Simulationen.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="kontakt" class="section" style="background: linear-gradient(135deg, #3498db, #2980b9); color: white;">
+        <h2 style="color: white;">Kontakt</h2>
+        <p style="text-align: center; font-size: 1.2rem;">Ihre Versuchsanlage simulieren und bauen lassen? Wir planen mit Ihnen in Wien.</p>
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <input type="text" name="name" placeholder="Name / Institut" required>
+            <input type="email" name="email" placeholder="E-Mail" required>
+            <input type="text" name="projekt" placeholder="z.B. Versuchsanlage Elektrochemie">
+            <textarea name="message" rows="5" placeholder="Details: Budget, Software, Zeitrahmen"></textarea>
+            <button type="submit" class="btn" style="background: rgba(255,255,255,0.95); color: #2980b9; width: 100%; font-weight: bold; box-shadow: 0 6px 20px rgba(255,255,255,0.3);">Angebot anfragen</button>
+        </form>
+        <p style="text-align: center; margin-top: 2rem;">Wien, AT | <a href="mailto:info@esengineering.at" style="color: #ffffff; text-decoration: underline; font-weight: 500;">info@esengineering.at</a> | +43 699 1234567</p>
+    </section>
+
+    <footer>
+        &copy; 2026 E & S Engineering. Alle Rechte vorbehalten. | <a href="#impressum" style="color: white; text-decoration: underline;">Impressum</a>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
